@@ -5,11 +5,11 @@ lastmod: 2025-06-09 20:35:33
 categories:
   - 教程
 ---
-> 这篇文章需要的资源可以从[这里](https://alist.shojola.top/%E5%AE%89%E8%A3%85%E6%98%A0%E5%83%8F/Windows/ASUS%20FX507ZM)找到。
+> 这篇文章需要的资源可以从[这里](https://alist.shojola.top/%E5%AE%89%E8%A3%85%E6%98%A0%E5%83%8F/Windows/ASUS%20FX507ZM)找到。<br>
 
 这篇文章适合 ASUS FX507ZM 的机型，不保证其他机型可用。其他机型请自行寻找对应的资源。
 
-> 如果你只是单纯想用原厂系统，下载文章内的压缩包后，打开`RESTORE`文件夹，将里面的 swm 文件直接恢复到系统盘中，然后重建引导即可。
+> 如果你只是单纯想用原厂系统，下载文章内的压缩包后，打开`RESTORE`文件夹，将里面的 swm 文件直接恢复到系统盘中，然后重建引导即可。<br>
 
 ## 准备恢复文件
 
@@ -30,9 +30,7 @@ categories:
 打开带管理员权限的命令提示符，先输入以下命令：
 
 ```powershell
-
 reagentc /info
-
 ```
 
 此时应该会看到 Windows RE 的状态为 `Disabled`。
@@ -40,17 +38,13 @@ reagentc /info
 记下刚刚建立的卷标为 RECOVERY 的分区盘符（这里假定为 E:\），输入以下命令：
 
 ```powershell
-
 reagentc /setreimage /path "E:\Recovery\WindowsRE"
-
 ```
 
 提示成功后，紧接着输入以下命令：
 
 ```powershell
-
 reagentc /setbootshelllink /configfile "E:\Recovery\WindowsRE\ReCustomization.xml"
-
 ```
 
 提示成功后进行下一步。
@@ -68,9 +62,7 @@ RESTORE 分区：勾选`无盘符`和`OEM`。
 在带管理员的命令提示符中输入以下命令：
 
 ```powershell
-
 reagentc /enable
-
 ```
 
 如果一切顺利，会收到启用成功的消息。此时再运行`reagentc /info`，应该也可以看到启用的状态。
