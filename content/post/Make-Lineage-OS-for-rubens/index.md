@@ -140,5 +140,3 @@ mka systemimage && mka productimage && cd$OUT && zip dsu.zip system.img product.
 ```
 
 这样下来你会得到一个dsu.zip，里面有两个img文件，你可以通过DSU Sideloader来直接加载系统，也可以直接用fastboot刷入对应分区。
-
->
