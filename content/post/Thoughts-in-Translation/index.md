@@ -4,6 +4,7 @@ date: 2023-11-09 21:23:00
 lastmod: 2024-12-26 23:55:25
 categories:
   - 胡思乱想
+slug: "Thoughts-in-Translation"
 ---
 今天翻译课讲茅盾的翻译思想，里面提到了这样的一个例子，原文是这样的：
 

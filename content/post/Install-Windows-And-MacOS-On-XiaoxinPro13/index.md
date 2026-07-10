@@ -4,6 +4,7 @@ date: 2024-07-27 19:09:00
 lastmod: 2026-07-05 11:51:31
 categories:
   - 教程
+slug: "Install-Windows-And-MacOS-On-XiaoxinPro13"
 ---
 好像目前没怎么看到这个机子装黑果的教程，于是就打算写一篇作为参考了
 

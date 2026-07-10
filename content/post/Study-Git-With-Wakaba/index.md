@@ -4,6 +4,7 @@ date: 2023-10-22 22:11:00
 lastmod: 2025-02-07 15:24:14
 categories:
   - 学习
+slug: "Study-Git-With-Wakaba"
 ---
 # 一、Git是什么？
 

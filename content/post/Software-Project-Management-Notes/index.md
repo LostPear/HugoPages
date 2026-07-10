@@ -4,6 +4,7 @@ date: 2025-02-21 10:07:00
 lastmod: 2025-06-13 16:59:42
 categories:
   - 学习
+slug: "Software-Project-Management-Notes"
 ---
 # 一、概述
 

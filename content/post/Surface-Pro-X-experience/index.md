@@ -6,6 +6,7 @@ tags:
   - 评测
 categories:
   - 评测
+slug: "Surface-Pro-X-experience"
 ---
 自从不怎么打游戏后，我的iPad Pro在我手里就基本处于吃灰的状态了，iPadOS虽然已经更新了很多，但是它还是无法成为我的下一台电脑。这时候就有了买入Windows平板的想法，兜兜转转看中了有arm加持的Surface Pro X。尽管WOA就是个半成品，怎么说也比iPadOS能干的生产力活多不少了。
 

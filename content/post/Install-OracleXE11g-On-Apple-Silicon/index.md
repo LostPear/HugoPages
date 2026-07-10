@@ -6,6 +6,7 @@ tags:
   - 教程
 categories:
   - 教程
+slug: "Install-OracleXE11g-On-Apple-Silicon"
 ---
 这几天买了一台 Macbook Air M1 玩玩，学校上课的时候要用 OracleXE 11g 数据库，但是软件没有提供 macOS 的版本，几经周折终于折腾成功，在这里写下折腾的过程。
 

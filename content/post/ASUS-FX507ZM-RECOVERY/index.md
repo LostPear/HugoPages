@@ -4,6 +4,7 @@ date: 2025-06-05 10:29:00
 lastmod: 2025-06-09 20:35:33
 categories:
   - 教程
+slug: "ASUS-FX507ZM-RECOVERY"
 ---
 > 这篇文章需要的资源可以从[这里](https://alist.shojola.top/%E5%AE%89%E8%A3%85%E6%98%A0%E5%83%8F/Windows/ASUS%20FX507ZM)找到。<br>
 

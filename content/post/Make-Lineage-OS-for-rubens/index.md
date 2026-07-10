@@ -4,6 +4,7 @@ date: 2022-08-30 00:00:00
 lastmod: 2025-02-07 15:00:34
 categories:
   - 教程
+slug: "Make-Lineage-OS-for-rubens"
 ---
 > 这篇文章中的部分内容可能已经过时。<br>
 

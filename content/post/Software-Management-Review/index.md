@@ -5,6 +5,7 @@ lastmod: 2025-06-16 17:10:45
 categories:
   - 学习
 draft: true
+slug: "Software-Management-Review"
 ---
 # 一、引言
 

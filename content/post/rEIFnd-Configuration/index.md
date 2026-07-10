@@ -6,6 +6,7 @@ tags:
   - 教程
 categories:
   - 教程
+slug: "rEIFnd-Configuration"
 ---
 > 这几天试着往电脑上安装FydeOS，不知道为什么FydeOS自带的rEFInd安装不上去，就试着自己搞了一下，在此整理了自己配置的步骤。<br>
 rEFInd是一个UI更为现代化的启动引导器，在Linux/Mac下，rEFInd可以使用自带的脚本安装，Windows则需要自己配置。以下内容适用于使用EFI启动的Windows平台。<br>

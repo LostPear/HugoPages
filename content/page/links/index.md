@@ -1,5 +1,6 @@
 ---
 title: 友链
+slug: "links"
 menu:
     main: 
         weight: 4

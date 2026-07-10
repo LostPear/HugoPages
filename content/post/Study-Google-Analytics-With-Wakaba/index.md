@@ -6,6 +6,7 @@ tags:
   - 学习
 categories:
   - 学习
+slug: "Study-Google-Analytics-With-Wakaba"
 ---
 # 0. 什么是 Google Analytics ？
 
