@@ -1,0 +1,92 @@
+{{- $groups := slice -}}
+{{- range .Params.links -}}
+    {{- if .group -}}
+        {{- $groups = $groups | append .group -}}
+    {{- end -}}
+{{- end -}}
+{{- $groups = uniq $groups -}}
+
+{{- if gt (len $groups) 0 -}}
+    {{- range $groupName := $groups -}}
+        <h2 class="links-group-title" style="margin-top: 2.5rem; margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 1px solid var(--card-border-color); padding-bottom: 0.5rem;">{{ $groupName }}</h2>
+        <div class="article-list--compact links">
+            {{ range $link := where $.Params.links "group" $groupName }}
+                <article>
+                    <a href="{{ $link.website }}" target="_blank" rel="noopener">
+                        <div class="article-details">
+                            <h2 class="article-title">
+                                {{- $link.title -}}
+                            </h2>
+                            <footer class="article-meta">
+                                {{ with $link.description }}
+                                    {{ . }}
+                                {{ else }}
+                                    {{ $link.website }}
+                                {{ end }}
+                            </footer>
+                        </div>
+
+                        {{- $image := partial "helper/image" (dict "Image" $link.image "Resources" $.Resources "Context" .) -}}
+                        {{- with $image -}}
+                            <div class="article-image">
+                               {{ partial "helper/thumbnail-image" (dict 
+                                    "Resource" .Resource
+                                    "Width" 60
+                                    "Height" 60
+                                    "Resize" $.Site.Params.ImageProcessing.Thumbnail.Enabled
+                                    "Attributes" (dict
+                                        "src" $image.Permalink
+                                        "alt" $link.title
+                                        "loading" "lazy"
+                                        "width" .Width
+                                        "height" .Height
+                                    )
+                                ) }}
+                            </div>
+                        {{ end }}
+                    </a>
+                </article>
+            {{ end }}
+        </div>
+    {{- end -}}
+{{- else -}}
+    <div class="article-list--compact links">
+        {{ range $link := .Params.links }}
+            <article>
+                <a href="{{ $link.website }}" target="_blank" rel="noopener">
+                    <div class="article-details">
+                        <h2 class="article-title">
+                            {{- $link.title -}}
+                        </h2>
+                        <footer class="article-meta">
+                            {{ with $link.description }}
+                                {{ . }}
+                            {{ else }}
+                                {{ $link.website }}
+                            {{ end }}
+                        </footer>
+                    </div>
+
+                    {{- $image := partial "helper/image" (dict "Image" $link.image "Resources" $.Resources "Context" .) -}}
+                    {{- with $image -}}
+                        <div class="article-image">
+                           {{ partial "helper/thumbnail-image" (dict 
+                                "Resource" .Resource
+                                "Width" 60
+                                "Height" 60
+                                "Resize" $.Site.Params.ImageProcessing.Thumbnail.Enabled
+                                "Attributes" (dict
+                                    "src" $image.Permalink
+                                    "alt" $link.title
+                                    "loading" "lazy"
+                                    "width" .Width
+                                    "height" .Height
+                                )
+                            ) }}
+                        </div>
+                    {{ end }}
+                </a>
+            </article>
+        {{ end }}
+    </div>
+{{- end -}}
