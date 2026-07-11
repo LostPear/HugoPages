@@ -5,7 +5,7 @@
 /* Standalone images: constrain width and center, leaving margins on
    both sides instead of filling the entire content area.
    Only affects single images — multi-image galleries are untouched.
-   Adjust the 85% value to change the amount of side margin. */
+   Adjust the percentage value to change the amount of side margin. */
 
 /* Reset single-image gallery to text-area width (removes negative
    margins that would otherwise stretch it beyond the content area) */
@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-/* Cap the image at 85% and rely on the figure's text-align:center
+/* Cap the image width and rely on the figure's text-align:center
    to keep it centered */
 .article-content .gallery > figure:only-child img {
     max-width: 95%;
@@ -29,4 +29,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Links page group titles: follow dark/light mode text color */
+.links-group-title {
+    color: var(--card-text-color-main);
 }
